@@ -1,8 +1,33 @@
 body {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    size: 18px;
 } 
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:dodgerblue;
+    padding: 8px 200px 80px;
+    color: whitesmoke;
+}
+
+.header-links {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
 }
