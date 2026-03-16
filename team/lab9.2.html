@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- 
+    Document   : lab9.2
+    Created on : 3/16/2026
+    Author     : Quinn Chandler
+    Description:
+        main html page for the development plan
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Development Plan</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Rentta</h1>
+        <ul class="header-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+    </div>
+    <div class="overview">
+        <div class="textWall">
+            <h1><u>Development Plan</u></h1>
+            <ul>
+                <h2><u>Team Information</u></h2>
+                <ul>
+                    <li>Developers: Quinn Chandler (role: main functionality), William Zhu (role: TBD), and James Zhang (role: TBD)</li>
+                    <li>Client: Serena Chen</li>
+                    <li>Project Name: Rentta</li>
+                </ul>
+
+                <h2><u>Purpose</u></h2>
+                <ul>
+                    <li>
+                        The purpose of this app is to provide a website for people to borrow and exchange items. The
+                        client specified that they wanted it to be for “mid-class to low-class” people, so ideally
+                        exchange
+                        of money will be admitted or limited. Instead, the plan is to implement a “trust credit” that
+                        after
+                        an exchange and or borrow, each user can accentually upvote the other, letting other users know
+                        they
+                        are trustworthy.
+                    </li>
+                </ul>
+
+                <h2><u>Data Tables</u></h2>
+                <ul>
+                    <li>
+                        User Table
+                    </li>
+                    <ul>
+                        <table class="table">
+                            <br>
+                            <tr>
+                                <th>Field Name</th>
+                                <th>Data Type</th>
+                                <th>Use</th>
+                            </tr>
+                            <tr>
+                                <td>user_id</td>
+                                <td>INT</td>
+                                <td>A unique Id for the user</td>
+                            </tr>
+                            <tr>
+                                <td>username</td>
+                                <td>VARCHAR(15)</td>
+                                <td>Username for the user, max of 15 characters</td>
+                            </tr>
+                            <tr>
+                                <td>email</td>
+                                <td>VARCHAR(320)</td>
+                                <td>Email for user</td>
+                            </tr>
+                            <tr>
+                                <td>password_hash</td>
+                                <td>VARCHAR(300)</td>
+                                <td>The hashed password for the user</td>
+                            </tr>
+                            <tr>
+                                <td>trust_val</td>
+                                <td>INT</td>
+                                <td>The "trust" the user has</td>
+                            </tr>
+                        </table>
+                        <p>Primary Key: user_id</p>
+                    </ul>
+
+                    <li>
+                        Listings Table
+                    </li>
+                    <ul>
+                        <table class="table">
+                            <br>
+                            <tr>
+                                <th>Feild Name</th>
+                                <th>Data Type</th>
+                                <th>Use</th>
+                            </tr>
+                            <tr>
+                                <td>listing_id</td>
+                                <td>INT</td>
+                                <td>A unique Id for the listing</td>
+                            </tr>
+                            <tr>
+                                <td>user_id</td>
+                                <td>INT</td>
+                                <td>The owners Id</td>
+                            </tr>
+                            <tr>
+                                <td>contact_info</td>
+                                <td>VARCHAR(320)</td>
+                                <td>A method of contact</td>
+                            </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>VARCHAR(200)</td>
+                                <td>The title of a item</td>
+                            </tr>
+                            <tr>
+                                <td>description</td>
+                                <td>TEXT</td>
+                                <td>The description of the item</td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>VARCHAR(20)</td>
+                                <td>Borrow, or Exchange</td>
+                            </tr>
+                            <tr>
+                                <td>status</td>
+                                <td>VARCHAR(20)</td>
+                                <td>The status of the item</td>
+                            </tr>
+                            <tr>
+                                <td>keywords</td>
+                                <td>TEXT</td>
+                                <td>Keywords uses for searching</td>
+                            </tr>
+                        </table>
+                        <p>Primary Key: listing_id</p>
+                    </ul>
+                </ul>
+
+                <h2><u>Functions performed by the app</u></h2>
+                <ul>
+                    <li>
+                        makeAccount
+                        <ul>
+                            <li>Database effect: INSERT, adds an account to the user table</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        deleteAccount
+                        <ul>
+                            <li>Database effect: DELETE, deletes an account from the user table</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        makeListing
+                        <ul>
+                            <li>Database effect: INSERT, adds a listing to the listings table</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        deleteListing
+                        <ul>
+                            <li>Database effect: DELETE, deletes a listing from the listings table</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        confirmListing
+                        <ul>
+                            <li>Database effect: UPDATE, adds trust to the user's involved updating the user table</li>
+                            <li>Database effect: DELETE, deletes the listing from the listing table</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        login
+                        <ul>
+                            <li>Database effect: SELECT, selects the user from the user table and logs them in</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        showListing
+                        <ul>
+                            <li>Database effect: SELECT, selects the clicked on listing from the listings table and shows it to the client</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        search
+                        <ul>
+                            <li>Database effect: SELECT, will show listings based on keywords from the listings table</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        logout
+                        <ul>
+                            <li>Database effect: none, logs the user out</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
