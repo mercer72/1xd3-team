@@ -32,7 +32,7 @@
             <ul>
                 <h2><u>Team Information</u></h2>
                 <ul>
-                    <li>Developers: Quinn Chandler (role: main functionality), William Zhu (role: TBD), and James Zhang (role: TBD)</li>
+                    <li>Developers: Quinn Chandler, William Zhu, and James Zhang</li>
                     <li>Client: Serena Chen</li>
                     <li>Project Name: Rentta</li>
                 </ul>
@@ -47,7 +47,7 @@
                         after
                         an exchange and or borrow, each user can accentually upvote the other, letting other users know
                         they
-                        are trustworthy.
+                        are trustworthy. Rentta's job is to be a "posting board" for all things free.
                     </li>
                 </ul>
 
@@ -80,9 +80,9 @@
                                 <td>Email for user</td>
                             </tr>
                             <tr>
-                                <td>password_hash</td>
+                                <td>password</td>
                                 <td>VARCHAR(300)</td>
-                                <td>The hashed password for the user</td>
+                                <td>The password for the user</td>
                             </tr>
                             <tr>
                                 <td>trust_val</td>
@@ -157,28 +157,28 @@
                             <li>Database effect: INSERT, adds an account to the user table</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         deleteAccount
                         <ul>
                             <li>Database effect: DELETE, deletes an account from the user table</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         makeListing
                         <ul>
                             <li>Database effect: INSERT, adds a listing to the listings table</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         deleteListing
                         <ul>
                             <li>Database effect: DELETE, deletes a listing from the listings table</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         confirmListing
                         <ul>
@@ -186,28 +186,30 @@
                             <li>Database effect: DELETE, deletes the listing from the listing table</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         login
                         <ul>
                             <li>Database effect: SELECT, selects the user from the user table and logs them in</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         showListing
                         <ul>
-                            <li>Database effect: SELECT, selects the clicked on listing from the listings table and shows it to the client</li>
+                            <li>Database effect: SELECT, selects the clicked on listing from the listings table and
+                                shows it to the client</li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         search
                         <ul>
-                            <li>Database effect: SELECT, will show listings based on keywords from the listings table</li>
+                            <li>Database effect: SELECT, will show listings based on keywords from the listings table
+                            </li>
                         </ul>
                     </li>
-
+                    <br>
                     <li>
                         logout
                         <ul>
@@ -215,7 +217,54 @@
                         </ul>
                     </li>
                 </ul>
-            </ul>
+
+                <h2><u>Team Roles</u></h2>
+                <ul>
+                    Quinn Chandler, main Functionality:
+                    <ul>
+                        <li>Making sure the main functions of the site are in working order.</li>
+                        <li>Account handling, listing handling, and content display (but not style).</li>
+                        <li>Focus on, JavaScript, PHP, SQL, and HTML.</li>
+                        <li>Limited CSS work.</li>
+                    </ul>
+                    <br>
+                    James Zhang, main UI:
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <br>
+                    William Zhu, TBD:
+                    <ul>
+                        <li></li>
+                    </ul>
+                </ul>
+
+                <h2><u>Wireframes</u></h2>
+                <ul>
+
+                </ul>
+
+                <h2><u>The Increments</u></h2>
+                <ul>
+                    Incerment #1:
+                    <ul>
+                        <li>Get account log in / creation working</li>
+                        <li>Get listings working</li>
+                        <li>Have some temporary way to see listings</li>
+                    </ul>
+                    <br>
+                    Incerment #2:
+                    <ul>
+                        <li>Get searching working</li>
+                        <li>Add a convenient way to see random listings</li>
+                        <li>Finish trust system</li>
+                    </ul>
+                </ul>
+
+                <h2><u>Client Feedback</u></h2>
+                <ul>
+                    <li></li>
+                </ul>
         </div>
     </div>
 </body>
