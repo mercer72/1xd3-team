@@ -1,7 +1,7 @@
 /* 
     Document   : style
     Created on : 3/16/2026
-    Author     : Quinn Chandler
+    Author     : Quinn Chandler, William Zhu, and James Zhang
     Description:
         Style sheet for js assigment
 */
@@ -93,7 +93,8 @@ h1 {
     text-align: center;
 }
 
-.table td, .table th {
+.table td,
+.table th {
     border: 3px solid rgb(0, 0, 0);
     padding: 3px;
 }
@@ -107,6 +108,64 @@ h1 {
 .overflowBox {
     overflow-x: auto;
     display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: auto;
+    width: 75%;
+    margin-top: 20px;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 3px;
+}
+
+tbody th {
+    background-color: lightgray;
+}
+
+.sectionDiv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imgtextbox {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.largeimgtextbox {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 800px;
+}
+
+
+.imgtextbox img, .largeimgtextbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
 }
 
 @media (max-width: 500px) {

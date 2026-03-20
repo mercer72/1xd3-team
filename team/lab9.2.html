@@ -2,7 +2,7 @@
 <!-- 
     Document   : lab9.2
     Created on : 3/16/2026
-    Author     : Quinn Chandler
+    Author     : Quinn Chandler, William Zhu, and James Zhang
     Description:
         main html page for the development plan
 -->
@@ -40,14 +40,13 @@
                 <h2><u>Purpose</u></h2>
                 <ul>
                     <li>
-                        The purpose of this app is to provide a website for people to borrow and exchange items. The
-                        client specified that they wanted it to be for “mid-class to low-class” people, so ideally
-                        exchange
-                        of money will be admitted or limited. Instead, the plan is to implement a “trust credit” that
-                        after
-                        an exchange and or borrow, each user can accentually upvote the other, letting other users know
-                        they
-                        are trustworthy. Rentta's job is to be a "posting board" for all things free.
+                        Rentta is a user driven market for exchanging and borrowing items. Rentta is inspired by online
+                        stores like Amazon, but with an important difference; Rentta is only for free and or affordable
+                        items. “Trust” is what is most valuable to us, and you will be able to get “trust” currency from
+                        other users, the point is so you know if the person you are lending an item will return it or
+                        not. Rentta will have no online exchange of currency, and likewise no shipping services built
+                        in, interactions are purely user based, the primary role of Rentta is to be an advertisement for
+                        user goods.
                     </li>
                 </ul>
 
@@ -62,14 +61,14 @@
                                 <br>
                                 <tr>
                                     <th>Field Name</th>
-                                    <th>user_id</th>
-                                    <th>username</th>
-                                    <th>email</th>
-                                    <th>password</th>
-                                    <th>trust_val</th>
+                                    <td>user_id</td>
+                                    <td>username</td>
+                                    <td>email</td>
+                                    <td>password</td>
+                                    <td>trust_val</td>
                                 </tr>
                                 <tr>
-                                    <td>Data Type</td>
+                                    <th>Data Type</th>
                                     <td>INT</td>
                                     <td>VARCHAR(15)</td>
                                     <td>VARCHAR(300)</td>
@@ -77,7 +76,7 @@
                                     <td>INT</td>
                                 </tr>
                                 <tr>
-                                    <td>Use</td>
+                                    <th>Use</th>
                                     <td>A unique Id for the user</td>
                                     <td>Username for the user, max of 15 characters</td>
                                     <td>Email for user</td>
@@ -216,7 +215,12 @@
                     <br>
                     James Zhang, main UI:
                     <ul>
-                        <li></li>
+                        <li>Designing the website</li>
+                        <li>Formatting everything in a user friendly way</li>
+                        <li>Pop-ups, input and output formatting</li>
+                        <li>Optimising the website to follow good design principles</li>
+                        <li>Focus on, JavaScript, HTML, CSS, PHP</li>
+                        <li>Limited SQL work.</li>
                     </ul>
                     <br>
                     William Zhu, Main Infrastructure:
@@ -232,30 +236,137 @@
 
                 <h2><u>Wireframes</u></h2>
                 <ul>
+                    <div class="sectionDiv">
+                        <div class="largeimgtextbox">
+                            <img src="pictures/index.png">
+                            <p>Main index page for pc and tablet</p>
+                        </div>
 
+                        <div class="largeimgtextbox">
+                            <img src="pictures/inxed-mobile.png">
+                            <p>Main index page for mobile</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/info-pc.png">
+                            <p>Info pages on pc/tablet</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/info-mobile.png">
+                            <p>Info pages on mobile</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/search.png">
+                            <p>Search page on pc/tablet</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/search-mobile.png">
+                            <p>Search page on mobile</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/listing.png">
+                            <p>Listing page on pc/tablet</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/listing-mobile.png">
+                            <p>Listing page on mobile</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/profile.png">
+                            <p>Profile page on pc/tablet</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/profile-mobile.png">
+                            <p>Profile page on mobile</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/llistingsmake.png">
+                            <p>Listings creation on pc/tablet</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/listingmake-mobile.png">
+                            <p>Listings creation on mobile</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/login.png">
+                            <p>Login / account creation on pc/tablet</p>
+                        </div>
+
+                        <div class="largeimgtextbox">
+                            <img src="pictures/login-mobile.png">
+                            <p>Login / account creation on mobile</p>
+                        </div>
+                    </div>
                 </ul>
 
                 <h2><u>The Increments</u></h2>
                 <ul>
-                    Incerment #1:
+                    Incerment #1 (deadline: 4/1/2026):
                     <ul>
-                        <li>Get account log in / creation working</li>
-                        <li>Get listings working</li>
+                        <li>Get account log in / creation working, no account profiles for now (Quinn and William)</li>
+                        <li>Get listings working, as in creation of listings (Quinn and William)</li>
                         <li>Have some temporary way to see listings (even if just in a json for example)</li>
+                        <li>Majorly overhaul websites design according to wireframes (James)</li>
                     </ul>
                     <br>
-                    Incerment #2:
+                    Incerment #2 (deadline: 4/19/2026):
                     <ul>
-                        <li>Add a convenient way to see random listings (for user use, perhaps using AJAX)</li>
-                        <li>Get searching working (based on keywords)</li>
-                        <li>Finish trust system</li>
-                        <li>Have a way to view (via serch) user profiles</li>
+                        <li>Add a convenient way to see random listings (for user use, perhaps using AJAX) (Quinn)</li>
+                        <li>This view should also give the owner of the listing the ability to edit it</li>
+                        <li>Get searching working (based on keywords) (Quinn)</li>
+                        <li>Finish trust system (Quinn)</li>
+                        <li>Have a way to view (via serch) user profiles (Quinn)</li>
+                        <li>Implement design for all of the above (James)</li>
+                        <li>Connect all of the above in a user friendly way (William)</li>
                     </ul>
                 </ul>
 
                 <h2><u>Client Feedback</u></h2>
                 <ul>
-                    <li></li>
+                    <li>"Good job, some suggestions: To create a good shopping experience, ensure the navigation bar
+                        maintains a consistent height and width across all pages to prevent layout shifts, and
+                        standardize your paragraph styles to maintain a clean, rhythmic UI. A critical functional
+                        improvement for any e-commerce or registration site is the implementation of anchor links or
+                        interactive image triggers; when a user clicks a product image or a "View Details" button, the
+                        page should immediately jump to the specific section containing the price, product details,
+                        etc."
+                    </li>
+                    <li>Based on the client's feedback, first, the suggestion to “ensure the navigation bar maintains a
+                        consistent height and width across all pages to prevent layout shifts” means we need to
+                        standardize our layout structure. Currently, if our navbar changes size between pages, it can
+                        create a jarring experience for users. To fix this, we will define a fixed height and consistent
+                        styling in our CSS (e.g., using a shared class or global stylesheet) so every page feels stable
+                        and predictable.
+                    </li>
+
+                    <li>Next, the recommendation to “standardize your paragraph styles to maintain a clean, rhythmic UI”
+                        impacts our typography. Right now, inconsistent font sizes, spacing, or alignment can make the
+                        site look unpolished. We will address this by creating consistent rules for text (such as
+                        font-size, line-height, margins) to ensure readability and visual harmony across all sections.
+                    </li>
+
+                    <li>Finally, the most important functional improvement is implementing interactivity:
+                        “when a user clicks a product image or a 'View Details' button, the page should immediately jump
+                        to the specific section containing the price, product details, etc.”
+                        This means we need to introduce anchor links or clickable elements that improve navigation
+                        within the page. Instead of forcing users to scroll manually, we will connect buttons or images
+                        to specific sections using IDs (e.g., href="#product-details"). This significantly enhances user
+                        experience by making the site feel more responsive and intuitive.
+                    </li>
+
+                    <li>Overall, these suggestions push us to improve both consistency (design/UI) and usability
+                        (navigation/functionality), bringing our project closer to a professional e-commerce standard.
+                    </li>
                 </ul>
         </div>
     </div>
